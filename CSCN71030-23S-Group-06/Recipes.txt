@@ -1,0 +1,8 @@
+Name: Classic Egg and Cheese Sandwich
+Ingredients: Egg, cheese, bread, butter
+Instructions: Just cook by yourself
+----------
+Name: Avocado and Egg Toast
+Ingredients: Eggs, avocado, bread, salt, pepper
+Instructions: Cook it
+----------
