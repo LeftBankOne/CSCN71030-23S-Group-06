@@ -9,7 +9,7 @@ int main() {
     int recipeToDelete;
 
     // Get the initial number of recipes from the file
-    int numRecipes = getNumRecipes();
+    int numRecipes = getNumRecipes("Recipes.txt"); // Get the number of recipes from "Recipes.txt"
 
     do {
         displayMenu();
@@ -86,6 +86,6 @@ int main() {
                 printf("Invalid choice. Please try again.\n");
             }
         }
-    } while (choice != 4);
+    } while (choice != 5);
     return 0;
 }
