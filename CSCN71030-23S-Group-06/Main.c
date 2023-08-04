@@ -74,8 +74,12 @@ int main() {
                         numRecipes--;
                     }
                 }
-
             case 4:
+                // Generate and display a random recipe
+                generateRecipe("Recipes.txt");
+                break;
+
+            case 5:
                 printf("Exiting the program.\n");
                 break;
             default:

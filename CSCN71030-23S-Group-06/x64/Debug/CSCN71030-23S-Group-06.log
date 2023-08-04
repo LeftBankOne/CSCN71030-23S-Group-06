@@ -2,9 +2,11 @@
 C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(9,9): warning C4013: 'strcpy' undefined; assuming extern returning int
 C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(44,17): warning C4013: 'strstr' undefined; assuming extern returning int
 C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(44,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(93,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(112,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-  Main.c
-  Generating Code...
-  LINK : C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\x64\Debug\CSCN71030-23S-Group-06.exe not found or not built by the last incremental link; performing full link
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(94,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(113,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(158,11): warning C4013: 'time' undefined; assuming extern returning int
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(163,22): warning C4013: 'strcspn' undefined; assuming extern returning int
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(174,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(178,55): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(197,55): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
   CSCN71030-23S-Group-06.vcxproj -> C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\x64\Debug\CSCN71030-23S-Group-06.exe

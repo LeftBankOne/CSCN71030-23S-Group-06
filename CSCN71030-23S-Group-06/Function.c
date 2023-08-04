@@ -77,7 +77,8 @@ void displayMenu() {
     printf("1. Show the existing recipes.\n");
     printf("2. Add recipes.\n");
     printf("3. Delete recipes.\n");
-    printf("4. Exit.\n");
+    printf("4. Generate random recipe\n");
+    printf("5. Exit.\n");
     printf("Enter your choice: ");
 }
 
@@ -139,5 +140,81 @@ void deleteRecipeFromFile(const char* filename, int recipeNumber) {
     }
     else {
         printf("Error: Could not open the file or the temporary file.\n");
+    }
+}
+
+
+
+
+
+void generateRecipe(const char* filename) {
+    int numRecipes = getNumRecipes();
+
+    if (numRecipes == 0) {
+        printf("No recipes available.\n");
+        return;
+    }
+
+    srand(time(NULL));
+
+    char targetIngredient[100]; // User input for the ingredient to search
+    printf("Please enter an ingredient thay you would like to use in a recipe: ");
+    fgets(targetIngredient, sizeof(targetIngredient), stdin);
+    targetIngredient[strcspn(targetIngredient, "\n")] = '\0'; // Remove newline
+
+    FILE* file = fopen(filename, "r");
+    if (file != NULL) {
+        char line[1000];
+        int recipeNumber = 0;
+        int foundRecipe = 0;
+        int matchingRecipeIndices[MAX_RECIPES];
+        int matchingCount = 0;
+
+        while (fgets(line, sizeof(line), file) != NULL) {
+            if (strstr(line, "Name: ") != NULL) {
+                recipeNumber++;
+            }
+
+            if (strstr(line, targetIngredient) != NULL) {
+                matchingRecipeIndices[matchingCount++] = recipeNumber;
+            }
+        }
+
+        fclose(file);
+
+        if (matchingCount == 0) {
+            printf("No recipes found with the specified ingredient.\n");
+        }
+        else {
+            int randomIndex = matchingRecipeIndices[rand() % matchingCount];
+
+            file = fopen(filename, "r");
+            if (file != NULL) {
+                recipeNumber = 0;
+                int printRecipe = 0;
+
+                while (fgets(line, sizeof(line), file) != NULL) {
+                    if (strstr(line, "Name: ") != NULL) {
+                        recipeNumber++;
+                        if (recipeNumber == randomIndex) {
+                            printf("Randomly generated recipe with the ingredient '%s':\n", targetIngredient);
+                            printRecipe = 1;
+                        }
+                    }
+
+                    if (printRecipe) {
+                        printf("%s", line);
+                    }
+                }
+
+                fclose(file);
+            }
+            else {
+                printf("Error: Could not open the file.\n");
+            }
+        }
+    }
+    else {
+        printf("Error: Could not open the file.\n");
     }
 }

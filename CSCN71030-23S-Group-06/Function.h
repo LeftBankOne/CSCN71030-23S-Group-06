@@ -15,4 +15,4 @@ void showRecipesFromFile(const char* filename);
 void displayMenu();
 int getNumRecipes();
 void deleteRecipeFromFile(const char* filename, int recipeNumber);
-//struct Recipe generaterecipe();
+void generateRecipe(const char* filename);
