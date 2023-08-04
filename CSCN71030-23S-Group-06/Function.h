@@ -7,6 +7,7 @@ struct Recipe {
     char instructions[1000];
 };
 
+
 struct Recipe recipeDatabase[MAX_RECIPES]; // An Array of structure to store multiple recipes.
 void addRecipe(const char* name, const char* ingredients, const char* instructions);
 FILE* openFile(const char* filename, const char* mode);

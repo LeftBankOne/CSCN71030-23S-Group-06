@@ -4,84 +4,39 @@
 #include "Function.h"
 
 int main() {
-    int choice;
-    int numRecipesToAdd;
-    int recipeToDelete;
+  
 
+    //TEST #1                                            
     // Get the initial number of recipes from the file
     int numRecipes = getNumRecipes();
+    //should be 7 as there are currently no recipes stored in file 
+    printf("Initial getNumRecipes() function testing, expected output: 7 output given %d\n", numRecipes); 
+    if (numRecipes == 7)       //WHEN OPENING NEW FILE IT STARTS FROM 2 RECIPES SO THIS WILL BE SET TO 2 AND WILL BE INCREMENTED EVERY TIME PROGRAM COMPILES AGAIN AS NEW RECIPE IS ADDED TO FILE EACH TIME
+        printf("Test #1 for getNumRecipes = passed\n");
+    else
+        printf("Test #1 for getNumRecipes = failed\n");
 
-    do {
-        displayMenu();
-        int scanfResult = scanf("%d", &choice);
-        int c;
-        while ((c = getchar()) != '\n' && c != EOF); // Consume any remaining characters in the input buffer
-        if (scanfResult != 1) {
-            printf("Invalid input. Please enter a number.\n");
-        }
-        else {
+    //PASSED!
 
-            switch (choice) {
-            case 1:
-                // Show the number of recipes in the file and list all the recipes
-                showRecipesFromFile("Recipes.txt");
-                break;
-            case 2:
-                printf("Enter the number of additional recipes to add: ");
-                scanf("%d", &numRecipesToAdd);
-                getchar(); // Consume the newline character left by scanf
-                // Open or create the file if it's not existed
-                FILE* file = openFile("Recipes.txt", "a"); // Open file name "Recipes.txt" for appending
+    
+    //TEST #2
+    //This test will test the addRecipe function and also the numRecipes function
+    FILE* file = openFile("TestingRecipes.txt", "a"); // Open file name "Recipes.txt" for appending
+     addRecipe("sunny side eggs", "eggs, butter, salt", "1. heat butter in pan 2. crack eggs let cook 3. add salt to taste");
+     writeRecipeToFile(file, &recipeDatabase[0]); //saving the added recipe to file now
+     fclose(file);
 
-                for (int i = 0; i < numRecipesToAdd; i++) {
-                    char name[100];
-                    char ingredients[500];
-                    char instructions[1000];
+     int newNumRecipes = getNumRecipes();
+     //Testing add recipe and get number of recipes functions 
+     if (newNumRecipes == numRecipes + 1)
+         printf("Test #2 for addRecipe and getNumRecipes = passed\n");
+     else
+         printf("Test #2 for addRecipe and getNumRecipes = failed\n");
 
-                    printf("Enter the name of Recipe %d: ", i + 1);
-                    fgets(name, sizeof(name), stdin);
-                    name[strcspn(name, "\n")] = '\0';
+     //PASSED!
+    
 
-                    printf("Enter the ingredients of Recipe %d: ", i + 1);
-                    fgets(ingredients, sizeof(ingredients), stdin);
-                    ingredients[strcspn(ingredients, "\n")] = '\0';
-
-                    printf("Enter the instructions of Recipe %d: ", i + 1);
-                    fgets(instructions, sizeof(instructions), stdin);
-                    instructions[strcspn(instructions, "\n")] = '\0';
-
-                    addRecipe(name, ingredients, instructions);
-                    // Write the data to file
-                    writeRecipeToFile(file, &recipeDatabase[i]);
-                }
-                fclose(file);
-                break;
-            case 3:
-                // Delete a recipe
-                printf("Enter the recipe number to delete: ");
-                int scanfResult = scanf("%d", &recipeToDelete);
-                while ((c = getchar()) != '\n' && c != EOF); 
-
-                if (scanfResult != 1) {
-                    printf("Invalid input. Please enter a number.\n");
-                }
-                else {
-                    if (recipeToDelete < 1 || recipeToDelete > numRecipes) {
-                        printf("Invalid recipe number. Please enter a valid recipe number.\n");
-                    }
-                    else {
-                        deleteRecipeFromFile("Recipes.txt", recipeToDelete);
-                        numRecipes--;
-                    }
-                }
-
-            case 4:
-                printf("Exiting the program.\n");
-                break;
-            default:
-                printf("Invalid choice. Please try again.\n");
-            }
-        }
-    } while (choice != 4);
     return 0;
 }
+
+

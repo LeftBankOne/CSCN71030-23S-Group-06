@@ -86,7 +86,7 @@ void displayMenu() {
 // New function to get the number of recipes stored in the file
 int getNumRecipes() {
     int count = 0;
-    FILE* file = fopen("Recipes.txt", "r"); // Open file for reading
+    FILE* file = fopen("TestingRecipes.txt", "r"); // Open file for reading
     if (file != NULL) {
         char line[1000];
         while (fgets(line, sizeof(line), file) != NULL) {
