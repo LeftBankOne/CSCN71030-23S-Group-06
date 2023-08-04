@@ -9,10 +9,10 @@ struct Recipe {
 
 struct Recipe recipeDatabase[MAX_RECIPES]; // An Array of structure to store multiple recipes.
 void addRecipe(const char* name, const char* ingredients, const char* instructions);
-struct Recipe getRandomRecipe();
 FILE* openFile(const char* filename, const char* mode);
 void writeRecipeToFile(FILE* file, const struct Recipe* recipe);
 void showRecipesFromFile(const char* filename);
 void displayMenu();
 int getNumRecipes();
 void deleteRecipeFromFile(const char* filename, int recipeNumber);
+//struct Recipe generaterecipe();
