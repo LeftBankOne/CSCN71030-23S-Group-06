@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #pragma once
 #define MAX_RECIPES 100
 #define MAX_LINE_LENGTH 1000
@@ -13,6 +14,6 @@ FILE* openFile(const char* filename, const char* mode);
 void writeRecipeToFile(FILE* file, const struct Recipe* recipe);
 void showRecipesFromFile(const char* filename);
 void displayMenu();
-int getNumRecipes();
+int getNumRecipes(const char* filename);
 void deleteRecipeFromFile(const char* filename, int recipeNumber);
 void generateRecipe(const char* filename);

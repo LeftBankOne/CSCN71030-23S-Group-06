@@ -1,8 +1,16 @@
-Name: Classic Egg and Cheese Sandwich
-Ingredients: Egg, cheese, bread, butter
-Instructions: Just cook by yourself
+Name: Cheesy Spinach Omelette.
+Ingredients: Eggs, Cheddar cheese, Fresh Spinach, Olive oil, salt, pepper.
+Instructions: 1. Beat eggs in a bowl. 2. Heat olive oil in a pan. 3. Add fresh spinach and saute. 4. Pour beaten eggs into the pan. 5. Add cheddar cheese, salt, and peper. 6. Cook until the omelette is set.
 ----------
-Name: Avocado and Egg Toast
-Ingredients: Eggs, avocado, bread, salt, pepper
-Instructions: Cook it
+Name: Avocado and Egg Toast.
+Ingredients: Eggs, Avocado, Bread, Salt, Pepper.
+Instructions: 1. Fry the Eggs. 2. Mash avocado onto toasted bread. 3. Place fried eggs on top of the avocado toast. 4. Add salt and pepper to taste.
+----------
+Name: Breakfast Burrito.
+Ingredients: 1. Scramble eggs in a pan. 2. Cook sausage in a separate pan. 3. Warm the tortilla. 4.Fill the tortilla with scrambled eggs, cooked sausage, cheese and salsa. 5. Roll it up into a burrito.
+Instructions: sadf
+----------
+Name: Vietnamese Banh Mi
+Ingredients: Rice vinegar, white sugar, fresh cilantro leaves, mayonaise, boneless chicken breast.
+Instructions: Combine rice vinegar, sugar, and water in a sauce pan. Sprinkle chicken breast with garlic salt and pepper. Silce baguette in half lengthwise. Pull out the soft center of the bread, leaving a cavity for the fillings.
 ----------

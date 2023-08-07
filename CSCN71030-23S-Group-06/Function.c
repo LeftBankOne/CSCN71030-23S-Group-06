@@ -13,6 +13,7 @@ void addRecipe(const char* name, const char* ingredients, const char* instructio
     }
     else {
         printf("Recipe database is full. Cannot add more recipes.\n");
+        return -1; // indicate failure
     }
 }
 
@@ -158,7 +159,7 @@ void generateRecipe(const char* filename) {
     srand(time(NULL));
 
     char targetIngredient[100]; // User input for the ingredient to search
-    printf("Please enter an ingredient thay you would like to use in a recipe: ");
+    printf("Please enter an ingredient that you would like to use in a recipe: ");
     fgets(targetIngredient, sizeof(targetIngredient), stdin);
     targetIngredient[strcspn(targetIngredient, "\n")] = '\0'; // Remove newline
 

@@ -1,12 +1,15 @@
 ﻿  Function.c
 C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(9,9): warning C4013: 'strcpy' undefined; assuming extern returning int
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(44,17): warning C4013: 'strstr' undefined; assuming extern returning int
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(44,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(94,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(113,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(158,11): warning C4013: 'time' undefined; assuming extern returning int
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(163,22): warning C4013: 'strcspn' undefined; assuming extern returning int
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(174,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(178,55): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(197,55): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(16,18): warning C4098: 'addRecipe': 'void' function returning a value
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(45,17): warning C4013: 'strstr' undefined; assuming extern returning int
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(45,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(95,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(114,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(159,11): warning C4013: 'time' undefined; assuming extern returning int
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(164,22): warning C4013: 'strcspn' undefined; assuming extern returning int
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(175,47): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(179,55): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\CSCN71030-23S-Group-06\Function.c(198,55): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+  Main.c
+  Generating Code...
   CSCN71030-23S-Group-06.vcxproj -> C:\Users\EthanNguyen\source\repos\CSCN71030-23S-Group-06\x64\Debug\CSCN71030-23S-Group-06.exe
